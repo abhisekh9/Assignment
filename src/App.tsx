@@ -1,7 +1,7 @@
 import { Box, CssBaseline, ThemeProvider, createTheme } from '@mui/material';
 import Sidebar from './components/Sidebar/Sidebar';
 import ChatArea from './components/ChatArea/ChatArea';
-import { useChatStore } from './store/chatstore';
+// import { useChatStore } from './store/chatStore';
 
 const theme = createTheme({
   palette: {
@@ -20,7 +20,7 @@ const theme = createTheme({
 });
 
 function App() {
-  const sidebarCollapsed = useChatStore(state => state.sidebarCollapsed);
+  // const sidebarCollapsed = useChatStore(state => state.sidebarCollapsed);
 
   return (
     <ThemeProvider theme={theme}>
